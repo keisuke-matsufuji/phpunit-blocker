@@ -22,14 +22,14 @@ To attach PHPUnitFilterBlocker as test listener, add following element to phpuni
 <phpunit>
     <extensions>
         <bootstrap class="PHPUnitBlocker\Extension">
-        <parameter name="blockGroup" value="On"/>
-        <parameter name="blockExcludeGroup" value="On"/>
+            <parameter name="blockGroup" value="On"/>
+            <parameter name="blockExcludeGroup" value="On"/>
         </bootstrap>
     </extensions>
 </phpunit>
 ```
 
-If you want to block `--group` and `--exclude-group` options too, change `false` to `true` setting value above.
+If you want to block `--group` and `--exclude-group` options too, change `Off` to `On` setting value above.
 
 ## About blocking
 
